@@ -1,0 +1,225 @@
+.antLayoutAside {
+    position: relative;
+    height: 100%;
+}
+
+.antLayoutAside .antLayoutSider {
+    width: 224px;
+    background: #404040;
+    position: absolute;
+    overflow: auto;
+    padding-bottom: 24px;
+}
+
+.antLayoutAside .antLayoutSider>.antMenu {
+    margin-bottom: 20px;
+}
+
+.antLayoutAside .antLayoutHeader {
+    background: #404040;
+    height: 64px;
+    border-bottom: 1px solid #555555;
+    width: 100%;
+}
+.antLayoutAside .antLayoutBreadcrumb {
+    margin: 7px 0 -17px 24px;
+}
+
+.antLayoutAside .antLayoutMain {
+    margin-left: 224px;
+}
+
+.antLayoutAside .antLayoutContainer {
+    margin: 24px 16px;
+}
+
+.antLayoutAside .antLayoutContent {
+    background: #fff;
+    padding: 24px;
+}
+
+.antLayoutAside .antLayoutFooter {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+}
+.antLayoutAside .antLayoutHeader .antLayoutHeaderMenus{
+    float: right;
+    padding: 0;
+}
+
+.antLayoutAside .antLayoutHeader .antLayoutHeaderTitle{
+    float: left;
+}
+
+/* antd样式 全局的 */
+
+:global(.ant-layout-aside) {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-logo) {
+    width: 150px;
+    height: 32px;
+    background: #333;
+    border-radius: 6px;
+    margin: 16px 24px 16px 28px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-logo) {
+    width: 32px;
+    margin: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-sider) {
+    width: 224px;
+    background: #404040;
+    position: absolute;
+    overflow: visible;
+    padding-bottom: 24px;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) {
+    width: 64px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-sider) > :global(.ant-menu) {
+    margin-bottom: 20px;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) {
+    margin: 16px 0;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) :global(.nav-text) {
+    vertical-align: baseline;
+    display: inline-block;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) > :global(.anticon) {
+    transition: font-size .3s;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) {
+    transition: all 0s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) > :global(.anticon) {
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item) :global(.nav-text) {
+    display: none;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item:hover) {
+    background: #2db7f5;
+    color: #fff;
+    transition: all 0s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-sider) > :global(.ant-menu) > :global(.ant-menu-item:hover) :global(.nav-text) {
+    display: inline-block;
+    vertical-align: top;
+    background: #2db7f5;
+    color: #fff;
+    padding-right: 16px;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  /* 实际使用中需要改成 position: fixed */
+  :global(.ant-layout-aside) :global(.ant-aside-action) {
+    height: 42px;
+    width: 224px;
+    position: fixed;
+    bottom: 0;
+    background: #656565;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-aside-action) {
+    width: 64px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-header) {
+    background: #fff;
+    height: 64px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-breadcrumb) {
+    margin: 0px 0 -17px 24px;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-main) {
+    margin-left: 224px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside-collapse) :global(.ant-layout-main) {
+    margin-left: 64px;
+    transition: all 0.3s ease;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-container) {
+    margin: 0px 0px 0px 5px;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-content) {
+    background: #fff;
+    padding: 0px;
+  }
+  
+  :global(.ant-layout-aside) :global(.ant-layout-footer) {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+  }
+
+  /* 覆盖原来框架部分，导航条竖变横 */
+
+  :global(.user) :global(ul) {
+    width: 500px
+  }
+  :global(.video) :global(ul) {
+    width: 200px
+  }
+  :global(.alarm) :global(ul) {
+    width: 200px
+  }
+  :global(.docgwif) :global(ul) {
+    width: 200px
+  }
+  :global(.towerCrane) :global(ul) {
+    width: 400px
+  }
+  .antLayoutHeaderMenus :global(ul) :global(.ant-menu-item){
+    display: inline-block;
+    width:100px;
+    border: none
+  }
+  :global(.ant-menu-submenu-horizontal)>:global(.ant-menu){
+    margin-top: 3px;
+  } 

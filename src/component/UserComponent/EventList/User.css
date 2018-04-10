@@ -1,0 +1,13 @@
+.tables :global(table),.tables :global(table) :global(tr) :global(th){
+    text-align: center
+}
+.dom .text{
+    margin-left: 15px
+}
+.exampleInput{
+    display: inline-block;
+}
+.exampleInput :global(.ant-input) {
+    width: 200px;
+    margin: 0 8px 8px 0;
+}

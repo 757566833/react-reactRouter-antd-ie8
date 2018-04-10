@@ -1,0 +1,3 @@
+.tables :global(table),.tables :global(table) :global(tr) :global(th){
+    text-align: center
+}
